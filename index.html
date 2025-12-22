@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Salón de Belleza Carlos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+<header class="hero">
+  <div class="hero-content">
+    <h1>Cabello & Piel</h1>
+    <p>Unleash Your Beauty Potential</p>
+    <a href="#catalogo" class="boton-reserva">Reservar ahora</a>
+  </div>
+</header>
+
+  <!-- Inicio -->
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>Descubre la experiencia única de nuestro salón de belleza, donde estilo y cuidado se encuentran.</p>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="servicios">
+    <div class="contenedor-servicios">
+      <div class="texto-servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Experimenta servicios de belleza incomparables que combinan innovación y experiencia. Nuestro equipo profesional está dedicado a crear tratamientos personalizados que realzan tu belleza natural.</p>
+      </div>
+      <div class="imagen-servicios">
+        <img src="img/servicios.jpg" alt="Objetos estéticos de belleza">
+      </div>
+    </div>
+  </section>
+
+  <!-- Catálogo -->
+  <section id="catalogo" class="catalogo">
+    <h2>Catálogo de Servicios</h2>
+    <div class="servicio">
+      <img src="img/colorimetria.jpg" alt="colorimetria">
+      <h3>Sesion de Colorimetria</h3>
+      <p>S/60.00</p>
+      <button>Reservar</button>
+    </div>
+    <div class="servicio">
+      <img src="img/faciales.jpg" alt="faciales">
+      <h3>Sesion de Skincare</h3>
+      <p>S/80.00</p>
+          <div class="botones-servicio">
+      <button class="btn-reservar">Reservar</button>
+      <a href="servicio.html" class="btn-mas">Más servicios</a>
+    </div>
+    </div>
+
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <div class="contenedor-contacto">
+      <div class="texto-contacto">
+        <h2>Contáctanos</h2>
+        <p>¿Interesado en trabajar con nosotros? Completa la información y nos pondremos en contacto pronto. ¡Nos encantará saber de ti!</p>
+      </div>
+      <form class="formulario-contacto">
+        <div class="nombre">
+          <label for="nombre">Nombre <span>*</span></label>
+          <div class="nombre-campos">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="apellido" placeholder="Apellido">
+          </div>
+        </div>
+
+        <label for="email">Correo electrónico <span>*</span></label>
+        <input type="email" id="email" placeholder="ejemplo@correo.com">
+
+        <label class="checkbox">
+          <input type="checkbox" id="newsletter">
+          Suscribirme a novedades y actualizaciones
+        </label>
+
+        <label for="mensaje">Mensaje <span>*</span></label>
+        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Salón de Belleza Carlos | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
