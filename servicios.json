@@ -1,0 +1,44 @@
+[
+  {
+    "titulo": "Tratamientos Faciales",
+    "descripcion": "Protocolos personalizados para todo tipo de piel: limpieza profunda, hidratación y rejuvenecimiento.",
+    "precio": 45,
+    "imagen": "faciales.jpg"
+  },
+  {
+    "titulo": "Pestañas",
+    "descripcion": "Extensiones, lifting y tintado para una mirada más intensa y natural.",
+    "precio": 30,
+    "imagen": "pestannas.jpg"
+  },
+  {
+    "titulo": "Colorimetría",
+    "descripcion": "Asesoría profesional para encontrar la paleta de color que mejor te favorece y servicios de coloración.",
+    "precio": 60,
+    "imagen": "colorimetria.jpg"
+  },
+  {
+    "titulo": "Cavitación",
+    "descripcion": "Tratamientos no invasivos para modelar la figura y mejorar la textura de la piel.",
+    "precio": 70,
+    "imagen": "cavitacion.jpg"
+  },
+  {
+    "titulo": "Depilación",
+    "descripcion": "Protocolos personalizados para una piel suave y libre de vello.",
+    "precio": 45,
+    "imagen": "depilacion.jpg"
+  },
+  {
+    "titulo": "Masajes",
+    "descripcion": "Masajes relajantes y terapéuticos para renovar cuerpo y mente.",
+    "precio": 30,
+    "imagen": "masajes.jpg"
+  },
+  {
+    "titulo": "Lavado",
+    "descripcion": "Lavado profesional y cepillado para un acabado impecable.",
+    "precio": 20,
+    "imagen": "lavado.jpg"
+  }
+]

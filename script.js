@@ -34,3 +34,27 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.15 });
 
 tarjetas.forEach(t => observer.observe(t));
+
+// Cargar servicios desde JSON y generar tarjetas dinámicamente
+fetch("servicios.json")
+  .then(response => response.json())
+  .then(servicios => {
+    const contenedor = document.getElementById("lista-servicios");
+
+    servicios.forEach(servicio => {
+      const card = document.createElement("article");
+      card.classList.add("card-servicio");
+
+      card.innerHTML = `
+        <img src="img/${servicio.imagen}" alt="${servicio.titulo}" loading="lazy">
+        <div class="card-body">
+          <h3>${servicio.titulo}</h3>
+          <p>${servicio.descripcion}</p>
+          <p class="precio">Desde S/${servicio.precio}</p>
+        </div>
+      `;
+
+      contenedor.appendChild(card);
+    });
+  })
+  .catch(error => console.error("Error cargando servicios:", error));
