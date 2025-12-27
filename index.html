@@ -54,34 +54,31 @@
     </div>
     </div>
 
-  </section>
-
-  <!-- Contacto -->
   <section id="contacto" class="contacto">
     <div class="contenedor-contacto">
       <div class="texto-contacto">
         <h2>Contáctanos</h2>
         <p>¿Interesado en trabajar con nosotros? Completa la información y nos pondremos en contacto pronto. ¡Nos encantará saber de ti!</p>
       </div>
-      <form class="formulario-contacto">
+      <form class="formulario-contacto" action="https://cabellopiel.art/send-email" method="POST">
         <div class="nombre">
           <label for="nombre">Nombre <span>*</span></label>
           <div class="nombre-campos">
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="text" id="apellido" placeholder="Apellido">
+            <input type="text" id="nombre" name="name" placeholder="Nombre" required>
+            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
           </div>
         </div>
 
         <label for="email">Correo electrónico <span>*</span></label>
-        <input type="email" id="email" placeholder="ejemplo@correo.com">
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
 
         <label class="checkbox">
-          <input type="checkbox" id="newsletter">
+          <input type="checkbox" id="newsletter" name="newsletter">
           Suscribirme a novedades y actualizaciones
         </label>
 
         <label for="mensaje">Mensaje <span>*</span></label>
-        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <textarea id="mensaje" name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
         <button type="submit">Enviar</button>
       </form>
