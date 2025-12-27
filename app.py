@@ -12,7 +12,7 @@ def send_email():
     
     # Configure your email (use Gmail or similar; enable app passwords)
     sender_email = 'carlosijuma@hotmail.com'
-    sender_password = 'Loquesoyloquesere99.'
+    sender_password = 'Ci020799..'
     receiver_email = email
     
     msg = MIMEText(f"Name: {name}\nEmail: {email}\nMessage: {message}")
@@ -31,4 +31,5 @@ def send_email():
         return jsonify({'status': 'error', 'message': str(e)})
 
 if __name__ == '__main__':
+
     app.run(debug=True)
